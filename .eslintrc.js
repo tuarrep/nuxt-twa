@@ -1,10 +1,4 @@
 module.exports = {
-  root: true,
-  parserOptions: {
-    parser: 'babel-eslint',
-    sourceType: 'module'
-  },
-  extends: [
-    '@nuxtjs'
-  ]
+  extends: ['@nuxtjs/eslint-config-typescript'],
+  ignorePatterns: ['**/sw.js']
 }

@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "outDir": "dist",
+        "declaration": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "types": [
+            "@nuxt/types"
+        ]
+    },
+    "include": [
+        "src"
+    ]
+}
