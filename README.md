@@ -6,31 +6,9 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
-> Nuxt.js module for generating Trusted Web App from Nuxt.js app
+> Nuxt.js module for generating Trusted Web Activity from Nuxt.js app
 
-[📖 **Release Notes**](./CHANGELOG.md)
-
-## Setup
-
-1. Add `nuxt-twa` dependency to your project
-
-```bash
-yarn add nuxt-twa # or npm install nuxt-twa
-```
-
-2. Add `nuxt-twa` to the `modules` section of `nuxt.config.js`
-
-```js
-{
-  modules: [
-    // Simple usage
-    'nuxt-twa',
-
-    // With options
-    ['nuxt-twa', { /* module options */ }]
-  ]
-}
-```
+📖 [**Read Documentation**](https://nuxt-twa.tuarrep.dev/)
 
 ## Development
 
