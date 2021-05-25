@@ -1,4 +1,4 @@
- Global settings applied to the whole site.
+# Global settings applied to the whole site.
 #
 # “base” is the directory to change to before starting build. If you set base:
 #        that is where we will look for package.json/.nvmrc/etc, not repo root!
