@@ -13,6 +13,7 @@ export async function generateTwaManifest (context: TWAContext) {
   twaManifest.startUrl = context.nuxtOptions.manifest.start_url
   twaManifest.packageId =
     context.options.packageId || util.generatePackageId(context.options.host)
+  twaManifest.generatorApp = 'nuxt-twa'
 
   context.twaManifest = twaManifest
 }
