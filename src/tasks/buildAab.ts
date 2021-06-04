@@ -11,13 +11,13 @@ export async function buildAab (context: TWAContext) {
   await context.tooling.gradleWrapper.bundleRelease()
 
   const unsignedAabPath = path.resolve(context.options.targetDir, './app/build/outputs/bundle/release/app-release.aab')
+  const destinationAabPath = path.resolve(context.options.targetDir, './app-release-bundle.aab')
 
   if (context.keyConfig) {
     progressLogger.text = 'Signing AAB...'
-    const signedAabPath = path.resolve(context.options.targetDir, './app-release-bundle.aab')
-    await context.tooling.jarSigner.sign(context.keyConfig, context.keyConfig.password, context.keyConfig.keypassword, unsignedAabPath, signedAabPath)
+    await context.tooling.jarSigner.sign(context.keyConfig, context.keyConfig.password, context.keyConfig.keypassword, unsignedAabPath, destinationAabPath)
   } else {
-    await fs.promises.copyFile(unsignedAabPath, context.options.targetDir)
+    await fs.promises.copyFile(unsignedAabPath, destinationAabPath)
   }
 
   progressLogger.stop()

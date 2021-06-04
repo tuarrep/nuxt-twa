@@ -17,7 +17,8 @@ export async function buildApk (context: TWAContext) {
     const signedApkPath = path.resolve(context.options.targetDir, './app-release-signed.apk')
     await context.tooling.androidSdkTools.apksigner(context.keyConfig.path, context.keyConfig.password, context.keyConfig.alias, context.keyConfig.keypassword, unsignedApkPath, signedApkPath)
   } else {
-    await fs.promises.copyFile(unsignedApkPath, context.options.targetDir)
+    const destinationApkPath = path.resolve(context.options.targetDir, './app-release-unsigned.apk')
+    await fs.promises.copyFile(unsignedApkPath, destinationApkPath)
   }
 
   progressLogger.stop()
