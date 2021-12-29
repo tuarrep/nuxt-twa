@@ -9,22 +9,22 @@ Check the [Nuxt.js documentation](https://nuxtjs.org/api/configuration-modules#t
 
 ## Installation
 
-`nuxt-twa` depends on `@nuxtjs/pwa` module. Please follow its [installation steps](https://pwa.nuxtjs.org/setup) before installing this module.
+`nuxt-twa` depends on `@nuxtjs/pwa` module.
 
-Add `nuxt-twa` dependency to your project:
+Add `nuxt-twa` and `@nuxtjs/pwa` dependency to your project:
 
 <code-group>
   <code-block label="Yarn" active>
 
   ```bash
-  yarn add --dev nuxt-twa
+  yarn add --dev nuxt-twa @nuxtjs/pwa
   ```
 
   </code-block>
   <code-block label="NPM">
 
   ```bash
-  npm i --save-dev nuxt-twa
+  npm i --save-dev nuxt-twa @nuxtjs/pwa
   ```
 
   </code-block>
@@ -35,6 +35,7 @@ Edit your `nuxt.config.js` file to add twa module:
 ```js{}[nuxt.config.js]
 {
   buildModules: [
+    '@nuxtjs/pwa',
     'nuxt-twa',
   ]
 }
