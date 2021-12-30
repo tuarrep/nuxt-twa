@@ -10,3 +10,5 @@ coverage
 dist
 sw.*
 example/android
+assets
+*.d.ts

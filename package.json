@@ -9,9 +9,13 @@
       "name": "Nicolas Perraut <n.perraut@gmail.com>"
     }
   ],
+  "exports": {
+    "./src/assets/*": "./assets/*"
+  },
   "main": "dist/module.js",
   "types": "src/types.d.ts",
   "files": [
+    "assets",
     "dist",
     "src/types.d.ts"
   ],
