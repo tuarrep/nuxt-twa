@@ -1,6 +1,6 @@
 {
   "name": "nuxt-twa",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Nuxt.js module for generating Trusted Web App from Nuxt.js app",
   "repository": "tuarrep/nuxt-twa",
   "license": "MIT",
