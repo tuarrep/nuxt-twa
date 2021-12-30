@@ -1,6 +1,6 @@
 ---
 title: Introduction
-description: 'Distribute your PWA on the Google Play Store'
+description: 'Publish your PWA on the Google Play Store'
 position: 0
 category: ''
 features:
@@ -12,6 +12,11 @@ features:
 ---
 
 Fully automated [TWA](https://developer.chrome.com/docs/android/trusted-web-activity/overview/) solution for [Nuxt.js](https://nuxtjs.org)
+
+## Compatibility
+- ✅ NuxtJs 2.x
+- ✅ NuxtJs Bridge
+- ❌ NuxtJs 3.x
 
 ## Warning
 
