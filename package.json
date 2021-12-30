@@ -10,6 +10,10 @@
     }
   ],
   "exports": {
+    ".": {
+      "require": "./dist/module.js",
+      "import": "./dist/module.es.js"
+    },
     "./src/assets/*": "./assets/*"
   },
   "main": "dist/module.js",
