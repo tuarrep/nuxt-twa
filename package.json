@@ -49,6 +49,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "babel-eslint": "latest",
     "babel-jest": "^29.2.2",
+    "cli-progress": "^3.11.2",
     "eslint": "^8.27.0",
     "husky": "^8.0.1",
     "jest": "^29.2.2",

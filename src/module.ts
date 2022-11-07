@@ -38,6 +38,7 @@ export default async function twa (moduleOptions: TWAOptions) {
         tasks.buildAab(context)
       ])
     } catch (e) {
+      console.log(e)
       consola.error(e.stdout ? e.stdout : e)
     }
 

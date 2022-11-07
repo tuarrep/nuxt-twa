@@ -10,5 +10,7 @@ coverage
 dist
 sw.*
 example/android
+example/.tooling
+twa-config.json
 assets
 *.d.ts
