@@ -5,10 +5,19 @@ import tasks from './tasks'
 import { TWAOptions } from './types'
 import { buildContext } from './utils'
 
+const defaults: TWAOptions = {
+  enabled: true
+}
+
 export default async function twa (moduleOptions: TWAOptions) {
   const options: TWAOptions = {
+    ...defaults,
     ...this.options.twa,
     ...moduleOptions
+  }
+
+  if (!options.enabled) {
+    return consola.warn('TWA generation disabled by option')
   }
 
   const context = buildContext(options, this.nuxt.options)
@@ -22,6 +31,8 @@ export default async function twa (moduleOptions: TWAOptions) {
   } catch (e) {
     return consola.error(e)
   }
+
+  consola.success('TWA configuration is correct.')
 
   this.nuxt.hook('generate:done', async (_) => {
     consola.info(

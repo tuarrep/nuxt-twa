@@ -9,6 +9,7 @@ export interface KeyConfig {
 }
 
 export interface TWAOptions {
+  enabled?: boolean;
   androidSdkPath?: string;
   host?: string;
   jdkPath?: string;
