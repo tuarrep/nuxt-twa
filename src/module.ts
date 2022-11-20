@@ -6,7 +6,9 @@ import { TWAOptions } from './types'
 import { buildContext } from './utils'
 
 const defaults: TWAOptions = {
-  enabled: true
+  enabled: true,
+  appVersionCode: 1,
+  appVersionName: '1.0.0'
 }
 
 export default async function twa (moduleOptions: TWAOptions) {

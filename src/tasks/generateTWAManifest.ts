@@ -15,5 +15,8 @@ export async function generateTwaManifest (context: TWAContext) {
     context.options.packageId || util.generatePackageId(context.options.host)
   twaManifest.generatorApp = 'nuxt-twa'
 
+  twaManifest.appVersionCode = context.options.appVersionCode
+  twaManifest.appVersionName = context.options.appVersionName
+
   context.twaManifest = twaManifest
 }

@@ -15,6 +15,8 @@ export interface TWAOptions {
   jdkPath?: string;
   packageId?: string;
   targetDir?: string;
+  appVersionCode?: number;
+  appVersionName?: string;
 }
 
 export interface TWATooling {
